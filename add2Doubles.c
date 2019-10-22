@@ -9,7 +9,7 @@
 // declare a function that gets an integer from the user
 double getDouble(void) {
   double input;
-  scanf("%lf", &input);
+  scanf("%lg", &input);
   return input;
 }
 
