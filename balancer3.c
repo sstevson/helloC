@@ -10,7 +10,16 @@
 
 #include <stdio.h>
 
+/*
+ * Constant: BouncedCheckFee
+ * -------------------------
+ *  To change the amount of the fee charged for bounced checks, simply change
+ *  the value of this constant.  The constant must be a floating point number
+ *  (i.e., must contain at least one decimal point)
+ */
+
 #define BouncedCheckFee 10.00
+
 float GetInteger(void);
 
 int main(int argc, char *argv[]) {
