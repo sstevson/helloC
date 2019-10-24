@@ -17,16 +17,19 @@ int main(int argc, char *argv[]) {
 	int counter = 0;
 	double total = 0;
 	double value = 0;
+	double average = 0;
 
 	printf("How many numbers would you like to average? ");
 	counter = get_int();
+
 	for (i = 0; i < counter; i++) {
 		printf("Number? ");
 		value = get_dub();
 		total += value;
 	}
 
-	printf("Those numbers average to %lg\n", total / counter);
+	average = total / counter;
+	printf("Those numbers average to %lg\n", average);
 
 	return 0;
 
