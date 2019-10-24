@@ -20,7 +20,7 @@
 
 #define BouncedCheckFee 10.00
 
-float GetInteger(void);
+float get_int(void);
 
 int main(int argc, char *argv[]) {
 
@@ -28,14 +28,14 @@ int main(int argc, char *argv[]) {
 
   // get initial account balance
   printf("Enter initial balance: ");
-  value = GetInteger();
+  value = get_int();
   balance += value;
   printf("Your starting balance is $%.2f.\n", balance);
 
   // ask user if he has any deposits to add
   while (1) {
     printf("Add any deposits: ");
-    value = GetInteger();
+    value = get_int();
     if (value == 0) break;
     balance = balance + value;
     if (value < 0 && balance < 0) {
@@ -51,7 +51,7 @@ int main(int argc, char *argv[]) {
   return 0;
 }
 
-float GetInteger(void) {
+float get_int(void) {
 
   float input;
   scanf("%f", &input);

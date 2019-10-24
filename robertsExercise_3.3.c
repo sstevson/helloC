@@ -9,7 +9,7 @@
 
 #include <stdio.h>
 
-int GetInteger(void) {
+int get_int(void) {
     int input;
     scanf("%d", &input);
     return input;
@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
     int i, counter = 0;
 
     printf("How many times would you like me to repeat \"and tomorrow\"?.");
-    counter = GetInteger();
+    counter = get_int();
     for (i = 0; i < counter; i++) {
         if (i == counter - 1) {
             printf("and tomorrow.\n");

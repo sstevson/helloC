@@ -10,7 +10,7 @@
 #include <stdio.h>
 
 // declare a function that gets an integer from the user
-int GetInteger(void) {
+int get_int(void) {
   int input;
   scanf("%d", &input);
   return input;
@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
   int i, count = 0;
 
   printf("How many times would you like me to print \"Hello, world?\". ");
-  count = GetInteger();
+  count = get_int();
   for (i = 0; i < count; i++) {
     printf("Hello, world!\n");
   }
