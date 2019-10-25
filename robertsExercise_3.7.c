@@ -35,13 +35,15 @@ int main(int argc, char *argv[]) {
 
 }
 
-int get_int(void) {
+int get_int(void)
+{
 	int input;
 	scanf("%d", &input);
 	return input;
 }
 
-double get_dub(void) {
+double get_dub(void)
+{
 	double input;
 	scanf("%lg", &input);
 	return input;
