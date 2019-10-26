@@ -29,10 +29,12 @@ int main(int argc, char *argv[]) {
 	average = total / count;
 	printf("Your average is %lg.\n", average);
 
+	return 0;
 
 }
 
-double get_num(void) {
+double get_num(void)
+{
 	double input;
 	scanf("%lg", &input);
 	return input;
