@@ -14,18 +14,26 @@
 
 #define rowcount 8
 
+void print_star();
+
 int main(int argc, char *argv[]) {
 
-	int row;
-	int star;
+	int i;
 
-	for (row = 0; row < rowcount; row++) {
-		for (star = 0; star <= row; star++) {
-			printf("*");
-		}
+	for (i = 0; i < rowcount; i++) {
 
+		print_star(i);
 		printf("\n");
 	}
 
 	return 0;
+}
+
+void print_star(int i)
+{
+	int j;
+
+	for (j = 0; j <= i; j++) {
+		printf(" * ");
+	}
 }
