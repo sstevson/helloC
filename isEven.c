@@ -12,13 +12,13 @@ int main(int argc, char *argv[]) {
 
 	int i;
 
-	for (i = 1; i <= 20; i++) {
+	for (i = 1; i <= 20; i++)
 		if (is_even(i)) printf("%2d\n", i);
-	}
 }
 
 int is_even(int i)
 {
-	return (i % 2 == 0);
+	while (1)
+		return (i % 2 == 0);
 
 }
