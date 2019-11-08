@@ -16,13 +16,10 @@
 
 #include <stdio.h>
 int get_num(int n);
-void print_spaces(int n);
-void print_stars(int n);
+void print_pyramid(int n);
 
 int main(int argc, char *argv[]) {
 
-	int i;
-	int j;
 	int n;
 
 	n = 0;
@@ -30,15 +27,7 @@ int main(int argc, char *argv[]) {
 	printf("You determine the number of lines to print\n");
 	printf("by chosing an odd number.\n");
 	n = get_num(n);
-	for (i = n; i >= 0; i--) {
-		print_spaces(i);
-		printf("\n");
-	}
-
-	for (j = 0; i <= n; i++) {
-		print_stars(i);
-		printf("\n");
-	}
+	print_pyramid(n);
 
 	return 0;
 
@@ -62,20 +51,26 @@ int get_num(int n)
 
 }
 
-void print_spaces(int n)
+void print_pyramid(int n)
 {
+
 	int i;
+	int j;
+	int counter;
+	int end;
 
-	for (i = n; i > 0; i--) {
-		printf("s");
-	}
-}
+	counter = n;
+	end = 1;
 
-void print_stars(int n)
-{
-	int i;
-
-	for (i = 0; i < n; i++) {
-		printf("*");
+	while (counter > 0) {
+		for (i = counter; i > 1; i--) {
+			printf(" ");
+		}
+		for (j = 0; j < end; j++) {
+			printf("*");
+		}
+		printf("\n");
+		counter--;
+		end += 2;
 	}
 }
