@@ -11,6 +11,6 @@ int main(int argc, char *argv[]) {
 
 	nc = 0;
 	while (getchar() != EOF)
-		++nc;
+		++nc; // using prefix form of ++
 	printf("%ld\n", nc);
 }

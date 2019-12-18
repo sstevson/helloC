@@ -1,6 +1,6 @@
 /*
  * File: kernighanritchie9.c
- * Count characters in input; 1st edition
+ * Count characters in input; 2nd edition
  */
 
 #include <stdio.h>
